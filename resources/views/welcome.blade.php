@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenido | Mi Sitio Web</title>
+    <title>CardBastion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite('resources/css/app.css')
 </head>
@@ -11,7 +11,7 @@
     {{-- Header --}}
     <header class="bg-[#483330] shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-[#ecb23a]">Mi Sitio Web</h1>
+            <h1 class="text-2xl font-bold text-[#ecb23a]">CardBastion</h1>
             <nav class="space-x-4 text-sm">
                 <a href="{{ route('dashboard') }}" class="text-white hover:text-[#ecb23a] transition">Dashboard</a>
                 <a href="{{ route('pokemon') }}" class="text-white hover:text-[#ecb23a] transition">Pokemon</a>
