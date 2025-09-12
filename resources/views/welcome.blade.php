@@ -61,21 +61,16 @@
         </div>
     </section>
 
-    <section class="bg-[#211b17] py-20">
+<section class="bg-[#211b17] py-20">
     <div class="max-w-6xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-[#ecb23a] mb-6 text-center">Síguenos en Instagram</h2>
+        <h2 class="text-3xl font-bold text-[#ecb23a] mb-6 text-center">Instagram</h2>
 
-        <!-- LightWidget WIDGET -->
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-        <iframe 
-            src="//lightwidget.com/widgets/c05fce056bf85691ba779c1625968ec7.html"
-            scrolling="no"
-            allowtransparency="true"
-            class="lightwidget-widget"
-            style="width:100%; border:0; overflow:hidden;">
-        </iframe>
+        <!-- Elfsight Social Feed -->
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+        <div class="elfsight-app-f0f034bf-85dc-407e-a894-c6464f08a999" data-elfsight-app-lazy></div>
     </div>
 </section>
+
 
     {{-- Footer --}}
     <footer class="bg-[#483330] py-6 text-center text-sm text-[#9d7552]">
