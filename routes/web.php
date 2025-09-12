@@ -18,9 +18,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', function () {
         return view('profile');
         })->name('profile');
-        Route::get('/settings', function () {
+    Route::get('/settings', function () {
         return view('settings');
     })->name('settings');
+    Route::get('/profile/edit', function () {
+        return view('profile-edit'); // crea esta vista si no existe
+    })->name('profile.edit');
 });
 
 require __DIR__.'/auth.php';
