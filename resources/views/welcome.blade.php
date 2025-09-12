@@ -61,6 +61,22 @@
         </div>
     </section>
 
+    <section class="bg-[#211b17] py-20">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[#ecb23a] mb-6 text-center">Síguenos en Instagram</h2>
+
+        <!-- LightWidget WIDGET -->
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+        <iframe 
+            src="//lightwidget.com/widgets/c05fce056bf85691ba779c1625968ec7.html"
+            scrolling="no"
+            allowtransparency="true"
+            class="lightwidget-widget"
+            style="width:100%; border:0; overflow:hidden;">
+        </iframe>
+    </div>
+</section>
+
     {{-- Footer --}}
     <footer class="bg-[#483330] py-6 text-center text-sm text-[#9d7552]">
         &copy; {{ date('Y') }} Mi Sitio Web. Todos los derechos reservados.
