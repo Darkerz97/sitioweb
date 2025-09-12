@@ -1,38 +1,22 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('layouts.app')
 
+@section('title', 'Dashboard')
 
-    <
+@section('content')
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <a href="{{ route('pokemon') }}" class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+            <h2 class="text-lg font-semibold">Pokemon</h2>
+            <p class="text-sm text-gray-600 mt-2">Explora el mundo de los Pokémon.</p>
+        </a>
 
-<script>
-    function toggleMenu() {
-        const menu = document.getElementById('menu');
-        menu.classList.toggle('hidden');
-    }
+        <a href="{{ route('magic') }}" class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+            <h2 class="text-lg font-semibold">Magic</h2>
+            <p class="text-sm text-gray-600 mt-2">Descubre cartas y hechizos.</p>
+        </a>
 
-    // Opcional: cerrar el menú si haces click fuera
-    window.onclick = function(event) {
-        if (!event.target.matches('#menu-button') && !event.target.closest('#menu')) {
-            const menu = document.getElementById('menu');
-            if (!menu.classList.contains('hidden')) {
-                menu.classList.add('hidden');
-            }
-        }
-    }
-</script>
-
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
+        <a href="{{ route('starwars') }}" class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+            <h2 class="text-lg font-semibold">Star Wars</h2>
+            <p class="text-sm text-gray-600 mt-2">Visita una galaxia muy, muy lejana.</p>
+        </a>
     </div>
-</x-app-layout>
+@endsection

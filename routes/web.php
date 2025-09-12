@@ -24,6 +24,19 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile/edit', function () {
         return view('profile-edit'); // crea esta vista si no existe
     })->name('profile.edit');
+
+    Route::get('/pokemon', function () {
+    return view('pokemon');
+})->name('pokemon');
+
+Route::get('/magic', function () {
+    return view('magic');
+})->name('magic');
+
+Route::get('/starwars', function () {
+    return view('starwars');
+})->name('starwars');
+
 });
 
 require __DIR__.'/auth.php';
