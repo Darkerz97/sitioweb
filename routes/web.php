@@ -18,6 +18,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', function () {
         return view('profile');
         })->name('profile');
+        Route::get('/settings', function () {
+        return view('settings');
+    })->name('settings');
 });
 
 require __DIR__.'/auth.php';
