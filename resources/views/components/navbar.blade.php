@@ -16,6 +16,13 @@
                 @if (auth()->user()->role === 'admin')
                 <a href="/admin">Admin Panel</a>
                 @endif
+
+                
+                @if (in_array(auth()->user()->role, ['admin', 'empleado']))
+                <a href="/empleado">Zona Empleados</a>
+                @endif
+
+
             @else
                 <a href="{{ route('login') }}" class="text-[#637c98] hover:text-white transition">Iniciar sesión</a>
             @endauth
