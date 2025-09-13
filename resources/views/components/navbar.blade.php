@@ -13,6 +13,9 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                     @csrf
                 </form>
+                @if (auth()->user()->role === 'admin')
+                <a href="/admin">Admin Panel</a>
+                @endif
             @else
                 <a href="{{ route('login') }}" class="text-[#637c98] hover:text-white transition">Iniciar sesión</a>
             @endauth
