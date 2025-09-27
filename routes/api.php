@@ -10,8 +10,10 @@ use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\TournamentController;
 use App\Http\Controllers\TournamentPlayerController;
 
+
+
 Route::get('/ping', function () {
-    return response()->json(['message' => 'API funcionando']);
+    return response()->json(['message' => 'API funcionando desde Laravel']);
 });
 
 // API Routes for Card Bastion
