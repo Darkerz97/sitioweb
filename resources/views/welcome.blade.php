@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>CardBastion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite('resources/css/app.css')
+    {{--@vite('resources/css/app.css')--}}
 </head>
 <body class="bg-[#211b17] text-white font-sans">
 
@@ -77,6 +77,6 @@
         &copy; {{ date('Y') }} Mi Sitio Web. Todos los derechos reservados.
     </footer>
 
-    @vite('resources/js/app.js')
+   {--} @vite('resources/js/app.js')--}
 </body>
 </html>
