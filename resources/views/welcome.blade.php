@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>CardBastion</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{--@vite('resources/css/app.css')--}}
+    @vite('resources/css/app.css')
 </head>
 <body class="bg-[#211b17] text-white font-sans">
 
@@ -18,6 +18,11 @@
                 <a href="{{ route('magic') }}" class="text-white hover:text-[#ecb23a] transition">Magic</a>
                 <a href="{{ route('starwars') }}" class="text-white hover:text-[#ecb23a] transition">Star Wars</a>
                 <a href="{{ route('login') }}" class="text-[#637c98] hover:text-white transition">Iniciar sesión</a>
+                <ul>
+                    <li>
+                        <a href="{{ route('register') }}">Registrarse</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -77,6 +82,6 @@
         &copy; {{ date('Y') }} Mi Sitio Web. Todos los derechos reservados.
     </footer>
 
-   {-- @vite('resources/js/app.js')--}
+   @vite('resources/js/app.js')
 </body>
 </html>
