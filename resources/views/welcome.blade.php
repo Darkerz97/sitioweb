@@ -77,6 +77,6 @@
         &copy; {{ date('Y') }} Mi Sitio Web. Todos los derechos reservados.
     </footer>
 
-   {--} @vite('resources/js/app.js')--}
+   {-- @vite('resources/js/app.js')--}
 </body>
 </html>
