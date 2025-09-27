@@ -10,6 +10,10 @@ use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\TournamentController;
 use App\Http\Controllers\TournamentPlayerController;
 
+Route::get('/ping', function () {
+    return response()->json(['message' => 'API funcionando']);
+});
+
 // API Routes for Card Bastion
 Route::middleware('api')->group(function () {
     Route::apiResource('products', ProductController::class);
